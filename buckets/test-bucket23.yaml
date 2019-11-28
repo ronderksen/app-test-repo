@@ -1,0 +1,33 @@
+meta:
+  name: bucket22
+  team: team A
+  description: test test tes ttes tst sts
+data:
+  types:
+    - json
+  entities:
+    - basket
+    - wishlist
+  sources:
+    - basket-service
+    - wishlist-service
+  maturity: raw
+  pii: true
+  keywords:
+    - basket
+    - wishlist
+platform:
+  indexable: true
+  spaces:
+    - nl.wehkamp
+  environments:
+    - dev
+    - prod
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
