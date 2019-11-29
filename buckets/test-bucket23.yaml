@@ -1,7 +1,7 @@
 meta:
-  name: bucket22
+  name: bucket25
   team: team A
-  description: test test tes ttes tst sts
+  description: test test test test test
 data:
   types:
     - json
@@ -14,8 +14,9 @@ data:
   maturity: raw
   pii: true
   keywords:
-    - basket
-    - wishlist
+    - key
+    - word
+    - data
 platform:
   indexable: true
   spaces:
