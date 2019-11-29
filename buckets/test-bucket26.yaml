@@ -1,0 +1,34 @@
+meta:
+  name: bucket25
+  team: team A
+  description: test test test test test
+data:
+  types:
+    - json
+  entities:
+    - basket
+    - wishlist
+  sources:
+    - basket-service
+    - wishlist-service
+  maturity: raw
+  pii: true
+  keywords:
+    - key
+    - word
+    - data
+platform:
+  indexable: true
+  spaces:
+    - nl.wehkamp
+  environments:
+    - dev
+    - prod
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
