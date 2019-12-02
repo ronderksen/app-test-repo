@@ -1,0 +1,29 @@
+meta:
+  name: bucket60
+  team: team C
+  description: "12345662536726362"
+data:
+  types:
+    - json
+  entities:
+    - basket
+  sources:
+    - basket-service
+  maturity: RAW
+  pii: false
+  keywords:
+    - basket
+platform:
+  indexable: true
+  spaces:
+    - nl.wehkamp
+  environments:
+    - data
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
