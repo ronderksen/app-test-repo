@@ -1,0 +1,29 @@
+meta:
+  name: bucketofchicken
+  team: team chicken
+  description: chicken tok tok
+data:
+  types:
+    - json
+    - csv
+  entities:
+    - chicken
+  sources:
+    - chicken-service
+  maturity: RAW
+  pii: false
+  keywords: []
+platform:
+  indexable: true
+  spaces:
+    - phoenix.wehkamp
+  environments:
+    - dev
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
