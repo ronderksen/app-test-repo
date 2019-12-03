@@ -1,0 +1,28 @@
+meta:
+  name: bucket11
+  team: team X
+  description: this is a description
+data:
+  types:
+    - csv
+  entities:
+    - basket
+  sources:
+    - basket-service
+  maturity: RAW
+  pii: false
+  keywords: []
+platform:
+  indexable: true
+  spaces:
+    - nl.lacent
+  environments:
+    - dev
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
