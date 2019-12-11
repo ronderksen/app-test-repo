@@ -1,0 +1,28 @@
+meta:
+  name: bucketabc
+  team: team A
+  description: wojteruyiopweiyuopiweutpoweitu
+data:
+  types:
+    - avro
+  entities:
+    - basket
+  sources:
+    - basket-service
+  maturity: RAW
+  pii: false
+  keywords: []
+platform:
+  indexable: true
+  spaces:
+    - nl.lacent
+  environments:
+    - data
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
