@@ -1,0 +1,28 @@
+meta:
+  name: bucket8436
+  team: team 1
+  description: eirytjeohijseoyiuweporyiuwpoeiyu
+data:
+  types:
+    - null
+  entities:
+    - basket
+  sources:
+    - basket-service
+  maturity: RAW
+  pii: false
+  keywords: basket
+platform:
+  indexable: true
+  spaces:
+    - null
+  environments:
+    - null
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
