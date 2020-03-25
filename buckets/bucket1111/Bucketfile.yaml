@@ -9,11 +9,11 @@ data:
     - basket
   sources:
     - basket-service
-  maturity: RAW
-  pii: false
-  keywords: []
+  maturity: MULTIPLE
+  pii: true
+  keywords: ""
 platform:
-  indexable: true
+  indexable: false
   spaces:
     - nl.lacent
   environments:
@@ -25,4 +25,4 @@ platform:
     lifecycles:
       - sandbox-lifecycle
   databricks:
-    mount: true
+    mount: false
