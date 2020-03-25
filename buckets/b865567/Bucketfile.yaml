@@ -1,0 +1,28 @@
+meta:
+  name: b865567
+  team: team 3
+  description: erjeklrteotyueoiytuepoiytuwpeoi
+data:
+  types:
+    - null
+  entities:
+    - basket
+  sources:
+    - basket-service
+  maturity: RAW
+  pii: true
+  keywords: basket
+platform:
+  indexable: true
+  spaces:
+    - null
+  environments:
+    - null
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
