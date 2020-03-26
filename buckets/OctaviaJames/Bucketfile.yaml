@@ -1,0 +1,29 @@
+meta:
+  name: OctaviaJames
+  team: Et explicabo Volupt
+  description: Iusto aliqua Molest
+data:
+  types:
+    - avro
+  entities:
+    - Occaecat culpa harum
+  sources:
+    - Magna eu aliquam rer
+  maturity: TRANSIENT
+  pii: true
+  keywords:
+    - Eum molestiae id vol
+platform:
+  indexable: true
+  spaces:
+    - nl.lacent
+  environments:
+    - data
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
