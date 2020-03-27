@@ -1,0 +1,29 @@
+meta:
+  name: bucketfoo
+  team: team x
+  description: blabeiorgueoituweopirtyuwpeoyiu
+data:
+  types:
+    - avro
+  entities:
+    - basket
+  sources:
+    - basket-service
+  maturity: RAW
+  pii: true
+  keywords:
+    - basket
+platform:
+  indexable: true
+  spaces:
+    - nl.lacent
+  environments:
+    - dev
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: true
