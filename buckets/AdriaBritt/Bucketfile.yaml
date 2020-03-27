@@ -1,0 +1,29 @@
+meta:
+  name: AdriaBritt
+  team: Rerum eius commodo l
+  description: Aut officiis quis nu
+data:
+  types:
+    - avro
+  entities:
+    - Mollit alias id ulla
+  sources:
+    - Est quo tempore vo
+  maturity: MULTIPLE
+  pii: "True"
+  keywords:
+    - Do neque dolor tenet
+platform:
+  indexable: "False"
+  spaces:
+    - nl.lacent
+  environments:
+    - dev
+  s3:
+    policies:
+      - databricks-wehkamp
+    region: eu-west-1
+    lifecycles:
+      - sandbox-lifecycle
+  databricks:
+    mount: "True"
